@@ -170,16 +170,21 @@ Author     : Jaap Brasser
 DateCreated: 2016-05-03
 DateUpdated: 2016-05-03
 Site       : http://www.jaapbrasser.com
-Version    : 1.0.0
+Version    : 1.1.0
 #>
     [cmdletbinding(SupportsShouldProcess,
                    ConfirmImpact = 'High'
     )]
-    param()
+    param(
+        [switch] $Force
+    )
 
     begin {
         $Before = Get-CimInstance -Query "Select DeviceID,Size,FreeSpace FROM Win32_LogicalDisk WHERE DeviceID='$($env:SystemDrive)'"
         Write-Verbose -Message ('Cleaning the System Drive {0}' -f $Before.DeviceID)
+        if ($Force) {
+            $ConfirmPreference = 'None'
+        }
     }
     
     process {
