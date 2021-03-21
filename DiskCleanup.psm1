@@ -11,7 +11,7 @@ Name       : Get-VolumeCachesKey
 Author     : Jaap Brasser
 DateCreated: 2016-05-03
 DateUpdated: 2016-05-03
-Site       : http://www.jaapbrasser.com
+Site       : https://www.jaapbrasser.com
 Version    : 1.0.0
 #>
     [cmdletbinding(SupportsShouldProcess)]
@@ -37,7 +37,7 @@ Name       : Get-VolumeCachesStateFlags
 Author     : Jaap Brasser
 DateCreated: 2016-05-03
 DateUpdated: 2016-05-03
-Site       : http://www.jaapbrasser.com
+Site       : https://www.jaapbrasser.com
 Version    : 1.0.0
 #>
     [cmdletbinding(SupportsShouldProcess)]
@@ -83,7 +83,7 @@ Name       : Set-VolumeCachesStateFlags
 Author     : Jaap Brasser
 DateCreated: 2016-05-03
 DateUpdated: 2016-05-03
-Site       : http://www.jaapbrasser.com
+Site       : https://www.jaapbrasser.com
 Version    : 1.0.0
 #>
     [CmdletBinding(SupportsShouldProcess)]
@@ -169,7 +169,7 @@ Name       : Remove-WindowsUpgradeFiles
 Author     : Jaap Brasser
 DateCreated: 2016-05-03
 DateUpdated: 2016-05-03
-Site       : http://www.jaapbrasser.com
+Site       : https://www.jaapbrasser.com
 Version    : 1.1.0
 #>
     [cmdletbinding(SupportsShouldProcess,
